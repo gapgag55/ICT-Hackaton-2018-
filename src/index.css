@@ -1,5 +1,30 @@
+html {
+  background-color: transparent;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  background-color: #F7F9FC;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-medium {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.alert-danger .alert-link {
+  font-weight: normal;
+}
+.glyphicon {
+  color: inherit !important;
+}
+
+.bg {
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-white {
+  background-color: #FFF;
+  border-radius: 5px;
 }

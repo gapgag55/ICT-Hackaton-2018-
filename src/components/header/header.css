@@ -1,0 +1,26 @@
+header {
+  background-color: #FFFFFF;
+  padding: 10px 0;
+}
+.navbar-brand {
+  font-size: 20px;
+  color: #000;
+  font-weight: 500;
+  padding-left: 0;
+}
+.nav > li a {
+  font-size: 14px;
+  color: #2B2C33;
+  letter-spacing: 0.66px;
+}
+.nav > li > a:hover, 
+.nav > li > a:focus {
+  background-color: transparent;
+}
+.nav > li a.--blue {
+  color: #215CEC;
+}
+.nav > li button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

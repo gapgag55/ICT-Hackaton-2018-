@@ -1,12 +1,21 @@
 import firebase from 'firebase'
 
-const config = {
-  apiKey: "AIzaSyDHL6JFTyBcaV60WpE4yXfeO0aZbzA9Xbk",
-  authDomain: "practice-auth.firebaseapp.com",
-  databaseURL: "https://practice-auth.firebaseio.com",
-}
+ var config = {
+  apiKey: "AIzaSyDb3r63h1UMOfB-D7eH5k0cAWp8hwmcpls",
+  authDomain: "data-science-project-by-poom.firebaseapp.com",
+  databaseURL: "https://data-science-project-by-poom.firebaseio.com",
+  projectId: "data-science-project-by-poom",
+  storageBucket: "data-science-project-by-poom.appspot.com",
+  messagingSenderId: "490804159277"
+};
 
-firebase.initializeApp(config)
+firebase.initializeApp(config);
 
-export const ref = firebase.database().ref()
+export const database = firebase.database()
 export const firebaseAuth = firebase.auth
+export const googleProvider = new firebase.auth.GoogleAuthProvider();
+export const facebookProvider = new firebase.auth.FacebookAuthProvider();
+export const twitterProvider = new firebase.auth.TwitterAuthProvider();
+
+// Notification
+export const messaging = firebase.messaging();
